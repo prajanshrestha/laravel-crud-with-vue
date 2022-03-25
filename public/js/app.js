@@ -2218,6 +2218,7 @@ new (vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_1___default())({
       });
     },
     deleteItem: function deleteItem(item) {
+      var that = this;
       axios__WEBPACK_IMPORTED_MODULE_0___default().post("/deleteItem/" + item.id).then(function (response) {
         that.getItems();
       });

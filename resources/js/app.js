@@ -50,6 +50,7 @@ new Vue({
             });
         },
         deleteItem: function (item) {
+            var that = this;
             axios.post("/deleteItem/" + item.id).then(function (response) {
                 that.getItems();
             });

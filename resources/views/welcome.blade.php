@@ -55,7 +55,7 @@
                                     class="btn btn-info">
                                     Edit
                                 </td>
-                                <td @click.prevent=" deleteItem(item)" class="btn btn-danger">
+                                <td @click=" deleteItem(item)" class="btn btn-danger">
                                     Delete
                                 </td>
                             </tr>
